@@ -105,7 +105,11 @@ void bhv_intro_lakitu_loop(void) {
             }
 
             if (intro_lakitu_set_pos_and_focus(o, gIntroLakituStartToPipeOffsetFromCamera,
-                                               gIntroLakituStartToPipeFocus) == 1) {
+                                               gIntroLakituStartToPipeFocus) == 1
+
+                // MOD -- fuck you lakitu
+                || 1
+            ) {
                 o->oAction++;
             }
 

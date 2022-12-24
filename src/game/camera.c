@@ -9665,7 +9665,8 @@ BAD_RETURN(s32) cutscene_intro_peach_letter(struct Camera *c) {
     cutscene_event(play_sound_peach_reading_letter, c, 83, 83);
 #endif
 
-    if ((gCutsceneTimer > 120) && (get_dialog_id() == DIALOG_NONE)) {
+    // MOD -- finish peach letter early
+    if ((gCutsceneTimer > 2) && (get_dialog_id() == DIALOG_NONE)) {
         // Start the next scene
         gCutsceneTimer = CUTSCENE_LOOP;
     }
